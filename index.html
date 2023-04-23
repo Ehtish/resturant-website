@@ -7,7 +7,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    <!-- aos scroll aniamtion library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -15,15 +16,18 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-
+    <!-- Magnific pop up -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
 
     <title>Resturant</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Resturant</a>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 pl-5">
+        <a class="navbar-brand nav-link" href="#">Resturant</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -44,38 +48,120 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#product">Product</a>
+              <a class="nav-link mx-2" href="#product">Product</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link mx-2" href="#gallery">Gallery</a>
             </li>
+            <li><a href="#" class="btn btn-sm mx-2">Franchising</a></li>
         </div>
       </nav>
-    </header>
-    <!-- showcase start here  -->
-    <div class="showcase container-fluid">
-      <div class="row">
-        <div class="d-flex flex-column align-items-center justify-content-center  col-md-6">
-          <h1>Hot and fresh mussels in pot.</h1>
-        <button class="btn btn-outline-success mt-3 px-5 ">Products</button>
-        </div>
-        <div class="col-md-6">
-          <img src="img/showcase.jpg" alt="showcase img" />
+      <!-- showcase start here  -->
+      <div class="showcase container-fluid py-5">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12 pl-5">
+            <h1 class="display-3">Hot and fresh mussels in pot.</h1>
+            <button class="btn-invert mt-2" data-type="inverted">Proudcts</button>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12 pr-5">
+            <img class="showcase-img float-right" src="img/showcase.jpg" alt="showcase image">
+          </div>
         </div>
       </div>
-    </div>
     <!-- showcase start here  -->
+    </header>
+    
 
     <!-- product  -->
+    <div class="container my-5" id="product" >
+      <h2 class="text-center display-4">Products</h2>
+      <div class="row px-5 mt-5" data-aos="zoom-in">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="card">
+              <img src="img/dish-1.jpg" alt="#">
+              <div class="card-footer text-center">
+                <p>Mussels from the counter</p>
+                <p>Price: $5</p>
+                <button class="btn px-5">Buy</button>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="card">
+              <img src="img/dish-2.jpg" alt="#">
+              <div class="card-footer text-center">
+                <p>Pot Mussels</p>
+                <p>Price: $5</p>
+                <button class="btn px-5">Buy</button>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="card">
+              <img src="img/dish-3.jpg" alt="#">
+              <div class="card-footer text-center">
+                <p>Spicy Mussels</p>
+                <p>Price: $5</p>
+                <button class="btn px-5">Buy</button>
+              </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
     <!-- product  ends -->
     <!-- gallery  -->
+    <div class="container my-5" id="gallery" >
+      <h2 class="text-center display-4">Gallery</h2>
+      <div class="row no-gutters mt-5 gallerys">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+          <a href="img/dish-1.jpg">
+            <img src="img/dish-1.jpg" class="img-fluid" alt="dish">
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+          <a href="img/dish-2.jpg">
+            <img src="img/dish-2.jpg" class="img-fluid" alt="dish">
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+          <a href="img/dish-3.jpg">
+            <img src="img/dish-3.jpg" class="img-fluid" alt="dish">
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+          <a href="img/dish-1.jpg">
+            <img src="img/dish-1.jpg" class="img-fluid" alt="dish">
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+          <a href="img/dish-2.jpg">
+            <img src="img/dish-2.jpg" class="img-fluid" alt="dish">
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+          <a href="img/dish-3.jpg">
+            <img src="img/dish-3.jpg" class="img-fluid" alt="dish">
+          </a>
+        </div>
+        
+        
+      </div>
+    </div>
     <!-- gallery ends  -->
 
-    <footer>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-        repellendus quae, corrupti nam officiis ab.
-      </p>
+    <footer class="bg-dark py-2 text-white">
+      
+      <div class="row py-3 pl-5">
+        <p class="mt-1">
+          &copy Copyright 2023. All Rights Reserved
+        </p>
+        <ul class="social-links d-flex ml-auto">
+          <li class="px-2"><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li class="px-2"><a href="#"><i class="fab fa-youtube"></i></a></li>
+          <li class="px-2"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+      </div>
     </footer>
 
     <!-- Optional JavaScript -->
@@ -95,5 +181,11 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!-- magnific popup link below -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- aos scroll animation library  link below-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js">
+    </script>
   </body>
 </html>
